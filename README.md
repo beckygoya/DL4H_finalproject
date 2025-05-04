@@ -2,7 +2,7 @@
 
 This repository contains three Python scripts to reproduce and extend the findings of the MIMIC-SBDH paper on social and behavioral determinants of health (SBDH) classification using clinical notes from the MIMIC-III dataset.
 
-We reproduce baseline models from the original paper—Random Forest and XGBoost—and further extend the study by introducing four comparison models: Logistic Regression (LR), BERT-LR, BERT-RF, and BERT-XGBoost.
+We reproduce baseline models from the original paper—Random Forest, XGBoost and Bio-ClinicalBERT —and further extend the study by introducing four comparison models: Logistic Regression (LR), BERT-LR, BERT-RF, and BERT-XGBoost.
 
 ##  Repository Structure
 ### 1. SaveClinicBERTEmbedding.py
