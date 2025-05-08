@@ -40,8 +40,10 @@ Install required packages, you can run the following command:
 pip install transformers torch pandas numpy scikit-learn xgboost
 
 You must have access to:
-MIMIC-SBDH.csv
-NOTEEVENTS.csv (from MIMIC-III)
+
+MIMIC-SBDH.csv (which are available in the GitHub repository https://github.com/hibaahsan/MIMIC-SBDH)
+
+NOTEEVENTS.csv (from MIMIC-III dataset which can be requested and downloaded from https://physionet.org/content/mimiciii/1.4/)
 
 📁 Note: In our implementation, we run the code in Google Colab and load the CSV files from Google Drive or Dropbox for accessibility.
 We recommend running the code in Google Colab for ease of setup and GPU access.
@@ -49,12 +51,15 @@ We recommend running the code in Google Colab for ease of setup and GPU access.
 ### Step-by-Step Instructions
 
 Step 1: Generate BERT Embeddings
+
 Run SaveClinicBERTEmbedding.py to generate bert-embed.npy, which contains Bio-ClinicalBERT embeddings used by downstream classifiers.
 
 Step 2: Train and Evaluate Baseline and Extension Models
+
 Run rf_xgb_extension.py to evaluate two baseline models — Random Forest and XGBoost — and four comparison models from the extension study: Logistic Regression (LR), BERT-LR, BERT-RF, and BERT-XGBoost.
 
 Step 3: Train and Evaluate Bio-ClinicalBERT Model
+
 Run Bio-ClinicalBERT.py to fine-tune Bio-ClinicalBERT for SBDH classification. This serves as the third baseline model from the original paper.
 
 
